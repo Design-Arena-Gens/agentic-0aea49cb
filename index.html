@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>French Fries Video Generator</title>
+    <meta name="description" content="Generate a fun fries-themed video right in your browser." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1 class="title">French Fries Video</h1>
+        <p class="subtitle">Crispy, golden, and ready to share.</p>
+      </header>
+
+      <section class="controls">
+        <button id="generateBtn" class="btn primary">Generate 10s Video</button>
+        <button id="regenBtn" class="btn" disabled>Regenerate</button>
+        <a id="downloadLink" class="btn secondary" href="#" download="french-fries.webm" aria-disabled="true">Download</a>
+      </section>
+
+      <section class="stage">
+        <video id="preview" class="player" controls playsinline></video>
+        <div id="status" class="status">Ready</div>
+      </section>
+
+      <footer class="footer">
+        <span>Works best in modern browsers (Chrome/Edge/Firefox).</span>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
